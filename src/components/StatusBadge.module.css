@@ -1,0 +1,45 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.8;
+}
+
+.draft {
+  background: #f0f0f0;
+  color: #555;
+}
+
+.review {
+  background: #fff7e0;
+  color: #b07000;
+}
+
+.approved {
+  background: #e6f9f0;
+  color: #1a7a4a;
+}
+
+.rejected {
+  background: #fdecea;
+  color: #c0392b;
+}
+
+.expired {
+  background: #f3eeff;
+  color: #6b38c4;
+}
