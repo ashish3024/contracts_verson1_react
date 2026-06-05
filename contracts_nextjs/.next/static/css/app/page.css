@@ -1,0 +1,285 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/StatusBadge.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.StatusBadge_badge__M4ZLM {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.StatusBadge_badge__M4ZLM::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.8;
+}
+
+.StatusBadge_draft__dejO8   { background: #f0f0f0; color: #555; }
+.StatusBadge_review__iZMVR  { background: #fff7e0; color: #b07000; }
+.StatusBadge_approved__LMeF0{ background: #e6f9f0; color: #1a7a4a; }
+.StatusBadge_rejected__jBH7v{ background: #fdecea; color: #c0392b; }
+.StatusBadge_expired__SkGeT { background: #f3eeff; color: #6b38c4; }
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Pagination.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.Pagination_nav__MT2gD {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.Pagination_btn__yCiZI {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pagination_btn__yCiZI:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.Pagination_btn__yCiZI:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.Pagination_btn__yCiZI.Pagination_active__20MC1 {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.Pagination_ellipsis__H3Y_I {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  padding: 0 4px;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Skeleton.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.Skeleton_skeleton__5iCED {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--skeleton-base) 25%, var(--skeleton-highlight) 50%, var(--skeleton-base) 75%);
+  background-size: 200% 100%;
+  animation: Skeleton_shimmer__7wTZv 1.5s infinite;
+}
+
+@keyframes Skeleton_shimmer__7wTZv {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.Skeleton_row__GR_c8 td {
+  padding: 18px 16px !important;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/Dashboard.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.Dashboard_main__dnlmr {
+  min-height: calc(100vh - 60px);
+  background: var(--bg);
+  padding: 40px 0 80px;
+}
+
+.Dashboard_container__6rOOg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.Dashboard_pageHeader__LNn6E {
+  margin-bottom: 32px;
+}
+
+.Dashboard_title__8qkrH {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.04em;
+  margin: 0 0 4px;
+}
+
+.Dashboard_subtitle__ey_Kt {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Toolbar */
+.Dashboard_toolbar__LPxf7 {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.Dashboard_searchWrap__6v84D {
+  position: relative;
+  flex: 1 1;
+  min-width: 220px;
+}
+
+.Dashboard_searchIcon__GBb1L {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.Dashboard_searchInput__j3YZX {
+  width: 100%;
+  height: 42px;
+  padding: 0 40px 0 42px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.Dashboard_searchInput__j3YZX:focus { border-color: var(--accent); }
+.Dashboard_searchInput__j3YZX::placeholder { color: var(--text-muted); }
+
+.Dashboard_clearBtn__qzXvv {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+.Dashboard_clearBtn__qzXvv:hover { color: var(--text-primary); }
+
+.Dashboard_select__xhCR_ {
+  height: 42px;
+  padding: 0 36px 0 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  transition: border-color 0.15s;
+}
+.Dashboard_select__xhCR_:focus { border-color: var(--accent); }
+
+/* Table */
+.Dashboard_tableWrap__0MCBI {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.Dashboard_table__k_nYZ {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Dashboard_table__k_nYZ thead tr {
+  background: var(--bg);
+  border-bottom: 1.5px solid var(--border);
+}
+
+.Dashboard_table__k_nYZ th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.Dashboard_table__k_nYZ td {
+  padding: 16px 16px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.Dashboard_row__YWnWM {
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.Dashboard_row__YWnWM:last-child td { border-bottom: none; }
+.Dashboard_row__YWnWM:hover { background: var(--row-hover); }
+.Dashboard_row__YWnWM:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.Dashboard_contractTitle__QpC2v { font-weight: 600; }
+.Dashboard_ownerCell__sgTS2 { color: var(--text-secondary) !important; }
+.Dashboard_dateCell__ZABI_ { color: var(--text-muted) !important; font-size: 0.85rem !important; }
+
+/* States */
+.Dashboard_stateCell__Aa9tD { text-align: center !important; padding: 64px 16px !important; }
+
+.Dashboard_emptyState__P7IHg, .Dashboard_errorState__Ihrew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.Dashboard_stateIcon__Cbp5D { font-size: 2.5rem; opacity: 0.3; }
+.Dashboard_stateTitle__dgd7l { font-weight: 600; font-size: 1rem; color: var(--text-primary); }
+.Dashboard_stateMsg__XWInl { color: var(--text-muted); font-size: 0.875rem; }
+.Dashboard_errorState__Ihrew .Dashboard_stateIcon__Cbp5D { color: #c0392b; opacity: 0.7; }
+
+/* Pagination */
+.Dashboard_paginationWrap__srgYQ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.Dashboard_pageInfo__4etaS { font-size: 0.85rem; color: var(--text-muted); }
+

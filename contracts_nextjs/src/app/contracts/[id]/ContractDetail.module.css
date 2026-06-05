@@ -1,0 +1,190 @@
+.main {
+  min-height: calc(100vh - 60px);
+  background: var(--bg);
+  padding: 40px 0 80px;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contractTitle {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  margin: 0;
+  flex: 1;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg);
+  border-radius: 10px;
+}
+
+.metaItem { display: flex; flex-direction: column; gap: 4px; }
+
+.metaLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.metaValue {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.monoId {
+  font-family: 'Courier New', monospace;
+  font-size: 0.78rem !important;
+  color: var(--text-muted) !important;
+  word-break: break-all;
+}
+
+.sectionLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* History */
+.historySection {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 32px;
+}
+
+.historyTitle {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 24px;
+  letter-spacing: -0.02em;
+}
+
+.emptyHistory {
+  text-align: center;
+  padding: 32px;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.timeline { list-style: none; margin: 0; padding: 0; }
+
+.timelineItem {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 28px;
+}
+.timelineItem:last-child { padding-bottom: 0; }
+
+.timelineDot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timelineLine {
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.timelineContent {
+  background: var(--bg);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.timelineHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.timelineBy { font-weight: 600; font-size: 0.875rem; color: var(--text-primary); }
+.timelineDate { font-size: 0.8rem; color: var(--text-muted); }
+
+.timelineChange {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.arrow { color: var(--text-muted); font-size: 1rem; }
+.created { font-size: 0.8rem; color: var(--text-muted); }
+
+/* Error */
+.errorCard {
+  background: var(--surface);
+  border: 1.5px solid #fcd;
+  border-radius: 16px;
+  padding: 48px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.errorIcon { font-size: 2.5rem; color: #c0392b; }
+.errorCard h2 { font-family: var(--font-syne), sans-serif; font-size: 1.25rem; margin: 0; }
+.errorCard p { color: var(--text-muted); margin: 0; }
