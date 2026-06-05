@@ -1,19 +1,17 @@
-# Maven
-target/
-*.class
-*.jar
-*.war
-*.ear
+# Dependencies
+node_modules/
+package-lock.json
 
-# IntelliJ IDEA
+# Build
+dist/
+build/
+
+# IDEs
+.vscode/
 .idea/
-*.iml
-*.iws
-*.ipr
-out/
-
-# Spring Boot
-spring-shell.log
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
@@ -23,6 +21,6 @@ Thumbs.db
 *.log
 logs/
 
-# Environment / secrets
+# Environment
 .env
-application-local.properties
+.env.local
